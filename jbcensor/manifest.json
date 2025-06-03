@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "J*b Censor",
+  "version": "1.0",
+  "description": "Protecting the unemployed since 2025",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
